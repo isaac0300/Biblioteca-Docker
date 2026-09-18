@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Biblioteca</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Biblioteca</h1>
+
+        <input
+            type="text"
+            id="titulo"
+            placeholder="Título do livro"
+        >
+
+        <input
+            type="text"
+            id="autor"
+            placeholder="Autor"
+        >
+
+        <input
+            type="number"
+            id="ano"
+            placeholder="Ano de publicação"
+        >
+
+        <button onclick="salvarLivro()">
+            Cadastrar
+        </button>
+
+        <h2>Livros cadastrados</h2>
+
+        <div id="lista"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

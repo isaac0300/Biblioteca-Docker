@@ -1,0 +1,37 @@
+services:
+ 
+  front:
+    build: ./frontend
+    container_name: front-biblioteca
+    ports:
+      - "8081:80"
+    networks:
+      - rede-biblioteca
+  back:
+    build: ./backend
+    container_name: back-biblioteca
+    ports:
+      - "3001:3000"
+    networks:
+      - rede-biblioteca
+    depends_on:
+      - banco
+  banco:
+    image: mysql:8.0
+    container_name: banco-biblioteca
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456
+      MYSQL_DATABASE: biblioteca
+    volumes:
+      - dados_biblioteca:/var/lib/mysql
+      - ./banco/init.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - rede-biblioteca
+ 
+networks:
+ 
+   rede-biblioteca:
+ 
+volumes:
+ 
+  dados_biblioteca:
