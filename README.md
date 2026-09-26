@@ -101,50 +101,6 @@ docker compose down -v
 
 o volume também é removido, causando a perda dos dados armazenados nele.
 
-## Como executar
-
-Na pasta do projeto, execute:
-
-```bash
-docker compose up -d --build
-```
-
-Depois, acesse:
-
-```text
-http://localhost:8081
-```
-
-Para verificar os containers:
-
-```bash
-docker ps
-```
-
-Para verificar a rede:
-
-```bash
-docker network inspect rede-biblioteca
-```
-
-Para verificar o volume:
-
-```bash
-docker volume inspect dados_biblioteca
-```
-
-Para parar os containers sem remover o volume:
-
-```bash
-docker compose down
-```
-
-Para parar os containers e remover o volume:
-
-```bash
-docker compose down -v
-```
-
 ## Tecnologias e ferramentas
 
 * Docker
