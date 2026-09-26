@@ -57,7 +57,6 @@ biblioteca-docker/
 │   └── init.sql
 │
 ├── docker-compose.yml
-└── LEIA-ME.txt
 ```
 
 ## Portas utilizadas
