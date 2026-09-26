@@ -38,33 +38,6 @@ Durante a atividade foram criados e configurados:
 
 Também foram realizados testes utilizando comandos do Docker para verificar os containers, a rede, o volume e a persistência dos dados.
 
-## Arquitetura
-
-```text
-                 Rede: rede-biblioteca
-
-┌──────────────────┐
-│     Frontend     │
-│      Nginx       │
-│     Porta 80     │
-└────────┬─────────┘
-         │
-         ▼
-┌──────────────────┐
-│      Backend     │
-│   Node.js/Express│
-│     Porta 3000   │
-└────────┬─────────┘
-         │
-         ▼
-┌──────────────────┐
-│       MySQL      │
-│     Porta 3306   │
-│                  │
-│ Volume persistente│
-└──────────────────┘
-```
-
 ## Estrutura do projeto
 
 ```text
