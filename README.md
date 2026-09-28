@@ -67,11 +67,6 @@ biblioteca-docker/
 | Backend  |                3001 |               3000 |
 | MySQL    |                   — |               3306 |
 
-O sistema pode ser acessado pelo navegador através de:
-
-```text
-http://localhost:8081
-```
 
 ## Volume e persistência
 
